@@ -1,0 +1,20 @@
+# Node / Bun
+node_modules/
+dist/
+coverage/
+*.log
+
+# Environments & secrets (this server needs none — keep it that way)
+.env
+.env.*
+
+# Legacy Python artifacts must never creep back in
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

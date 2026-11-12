@@ -1,0 +1,37 @@
+{
+  "name": "openmeteo-mcp",
+  "version": "0.2.0",
+  "description": "Reference-quality demo MCP server: six narrow, well-typed weather tools over the free, keyless Open-Meteo API (official TypeScript SDK).",
+  "type": "module",
+  "license": "MIT",
+  "author": "Drok AI",
+  "homepage": "https://github.com/DrokAI/mcp-demo-weather",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DrokAI/mcp-demo-weather.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DrokAI/mcp-demo-weather/issues"
+  },
+  "bin": {
+    "openmeteo-mcp": "bin/openmeteo-mcp.js"
+  },
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "start": "bun run bin/openmeteo-mcp.js",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "verify": "bun run scripts/verify-stdio.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.0"
+  }
+}
